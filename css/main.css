@@ -1,0 +1,867 @@
+/* <meta name="viewport"content="width=device-width, initial-scale=1.0"> */
+/* <meta http-equiv="X-UA-Compatible"content="IE=edge"> */
+
+@font-face {
+	font-family: 'post_no_bills_jaffnabold';
+	src        : url('/fonts/postnobillsjaffna-bold-webfont.woff2') format('woff2'),
+		url('/fonts/postnobillsjaffna-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style : normal;
+}
+
+@font-face {
+	font-family: 'post_no_bills_jaffnaextrabold';
+	src        : url('/fonts/postnobillsjaffna-extrabold-webfont.woff2') format('woff2'),
+		url('/fonts/postnobillsjaffna-extrabold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style : normal;
+}
+
+@font-face {
+	font-family: 'post_no_bills_jaffnalight';
+	src        : url('/fonts/postnobillsjaffna-light-webfont.woff2') format('woff2'),
+		url('/fonts/postnobillsjaffna-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style : normal;
+}
+
+@font-face {
+	font-family: 'post_no_bills_jaffnamedium';
+	src        : url('/fonts/postnobillsjaffna-medium-webfont.woff2') format('woff2'),
+		url('/fonts/postnobillsjaffna-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style : normal;
+}
+
+@font-face {
+	font-family: 'post_no_bills_jaffnaregular';
+	src        : url('/fonts/postnobillsjaffna-regular-webfont.woff2') format('woff2'),
+		url('/fonts/postnobillsjaffna-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style : normal;
+}
+
+@font-face {
+	font-family: 'post_no_bills_jaffnasemibold';
+	src        : url('/fonts/postnobillsjaffna-semibold-webfont.woff2') format('woff2'),
+		url('/fonts/postnobillsjaffna-semibold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style : normal;
+}
+
+
+
+body {
+	margin    : 0px;
+	background: black;
+	color     : white;
+}
+
+.tel-reg {
+	background : #000;
+	padding    : 2px 0px;
+	display    : flex;
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size  : 12px;
+	line-height: 1.3;
+	color      : gray;
+}
+
+.tel-reg__left-01 {
+	display: flex;
+}
+
+.tel-reg__link-l {
+	display     : flex;
+	align-items : center;
+	color       : gray;
+	margin-right: 16px;
+}
+
+.tel-reg__link-r {
+	color      : gray;
+	display    : flex;
+	align-items: center;
+}
+
+.tel-reg__link-r:before {
+	content         : '';
+	display         : inline-block;
+	background-image: url('/img/content/enter.png');
+	width           : 14px;
+	height          : 14px;
+	margin-right    : 10px;
+}
+
+.menu {
+	display   : flex;
+	background: #0F0F0F;
+	height    : 80px;
+}
+
+.container {
+	justify-content: space-between;
+	margin         : 0 auto;
+	width          : 1110px;
+}
+
+.flex {
+	display        : flex;
+	justify-content: space-between;
+}
+
+.menu-right {
+	display        : flex;
+	justify-content: center;
+}
+
+.menu-logo {
+	font-family    : 'post_no_bills_jaffnabold', Arial, Helvetica, sans-serif;
+	font-size      : 36px;
+	line-height    : 1.4;
+	color          : white;
+	text-decoration: none;
+	display        : flex;
+	align-items    : center;
+}
+
+.menu-nav {
+	margin-right: 40px;
+	display     : flex;
+}
+
+.menu-nav__link {
+	font-family: PT Sans,
+		Arial,
+		Helvetica,
+		sans-serif;
+	font-size      : 14px;
+	line-height    : 1.4;
+	color          : gray;
+	text-decoration: none;
+	padding        : 0px 20px;
+	display        : flex;
+	align-items    : center;
+}
+
+.menu-nav__link:hover {
+	color     : white;
+	background: rgba(31, 31, 31, 1);
+}
+
+.menu-2pic {
+	display    : flex;
+	align-items: center;
+}
+
+.menu-bascet {
+	margin-right: 45px;
+}
+
+.main-window {
+	background    : url(/img/bg/Rectangle\ 3.jpg) center top / cover no-repeat;
+	/*height      : calc(100vh - 123.6px);*/
+	padding-top   : 160px;
+	padding-bottom: 154px;
+}
+
+.logo-main {
+	display        : flex;
+	justify-content: center;
+}
+
+.desk-logotext {
+	display        : flex;
+	justify-content: center;
+	padding-top    : 80px;
+	width          : 730px;
+	margin         : 0 auto;
+	font-family    : PT Sans,
+		Arial,
+		Helvetica,
+		sans-serif;
+	font-size     : 16px;
+	line-height   : 1.5;
+	text-transform: uppercase;
+	color         : white;
+	;
+	text-align: center;
+}
+
+.container-one {
+	display        : flex;
+	justify-content: center;
+
+}
+
+.co-season {
+	width  : 55%;
+	padding: 93px 0;
+}
+
+.co-season__title {
+	display        : flex;
+	justify-content: center;
+	font-family    : 'Playfair Display', Arial, Helvetica, sans-serif;
+	font-size      : 36px;
+	line-height    : 1.2;
+	text-transform : uppercase;
+	margin         : 0px;
+}
+
+.co-season__list {
+	display        : flex;
+	justify-content: center;
+}
+
+.product {
+	display        : block;
+	text-decoration: none;
+}
+
+.product-bg {
+	padding      : 55px 22px 56px 23px;
+	background   : rgba(25, 27, 28, 1);
+	margin-bottom: 25px;
+}
+
+.product.center {
+	margin: auto 50px;
+}
+
+.co-season__line {
+	width : 120px;
+	border: 1px solid white;
+	margin: 50px auto;
+
+}
+
+.name-product {
+	display      : flex;
+	margin-bottom: 10px;
+	font-family  : 'Playfair Display', Arial, Helvetica, sans-serif;
+	font-size    : 18px;
+	line-height  : 1.16;
+	color        : white;
+}
+
+.product-price {
+	display    : flex;
+	font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+	font-size  : 16px;
+	line-height: 1.15;
+	color      : white;
+}
+
+.co-newcollection {
+	background     : url(/img/collections/man_watch.jpg) center top / cover no-repeat;
+	width          : 45%;
+	padding        : 112px 0;
+	text-align     : center;
+	display        : flex;
+	justify-content: center;
+	align-items    : flex-end;
+}
+
+.co-nc__title {
+	display        : flex;
+	justify-content: center;
+	font-family    : 'Playfair Display',
+		Arial,
+		Helvetica,
+		sans-serif;
+	font-size     : 36px;
+	line-height   : 1.2;
+	text-transform: uppercase;
+	margin        : 0px;
+}
+
+.co-collection__line {
+	width : 120px;
+	border: 1px solid white;
+	margin: 30px auto;
+}
+
+.catalog__link {
+	font-family: 'PT Sans',
+		Arial,
+		Helvetica,
+		sans-serif;
+	font-size      : 18px;
+	line-height    : 1.3;
+	color          : white;
+	letter-spacing : 0.1em;
+	text-transform : uppercase;
+	text-decoration: none;
+	border         : solid 1px white;
+	padding        : 10px 30px;
+}
+
+.container-two {
+	display        : flex;
+	justify-content: center;
+}
+
+.ct-bg {
+	background: url(/img/collections/bd_man.png) center top / cover no-repeat;
+	width     : 45%;
+}
+
+.ct-collection {
+	width     : 55%;
+	padding   : 93px 0;
+	text-align: center;
+}
+
+.ct-collection__title {
+	display        : flex;
+	justify-content: center;
+	font-family    : 'Playfair Display', Arial, Helvetica, sans-serif;
+	font-size      : 36px;
+	line-height    : 1.2;
+	text-transform : uppercase;
+	margin         : 0px;
+}
+
+.ct-collection__line {
+	width : 120px;
+	border: 1px solid white;
+	margin: 50px auto;
+}
+
+.ct-collection__text {
+	display        : flex;
+	justify-content: center;
+	width          : 471px;
+	height         : auto;
+	margin         : 0 auto;
+	font-family    : 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size      : 14px;
+	line-height    : 1.5;
+	color          : white;
+	text-align     : center;
+	margin-bottom  : 73px;
+}
+
+.collection__link {
+	font-family    : 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size      : 18px;
+	line-height    : 1.3;
+	color          : white;
+	letter-spacing : 0.1em;
+	text-transform : uppercase;
+	text-decoration: none;
+	border         : solid 1px white;
+	padding        : 10px 30px;
+}
+
+.new-products {
+	padding-bottom: 110px;
+}
+
+.np-season__title {
+	display        : flex;
+	justify-content: center;
+	font-family    : 'Playfair Display', Arial, Helvetica, sans-serif;
+	font-size      : 36px;
+	line-height    : 1.2;
+	text-transform : uppercase;
+	margin         : 0px;
+	padding-top    : 120px;
+}
+
+.np-season__line {
+	width : 120px;
+	border: 1px solid white;
+	margin: 40px auto 81px auto;
+}
+
+.np-season__list {
+	display        : flex;
+	justify-content: center;
+	flex-wrap      : wrap;
+}
+
+.np-product {
+	display        : block;
+	margin-right   : 23px;
+	margin-bottom  : 40px;
+	text-decoration: none;
+}
+
+.np-product:nth-child(4n) {
+	margin-right: 0px;
+}
+
+.np-season__list-next {
+	display        : flex;
+	justify-content: center;
+	margin-top     : 40px;
+	padding-bottom : 150px;
+}
+
+.brand {
+	background: #0F0F0F;
+}
+
+/*.brand-list {
+	display          : flex;
+	justify-content  : center;
+	align-items      : center;
+	/*flex-direction : column;
+} 
+*/
+
+.brand-title {
+	display        : flex;
+	justify-content: center;
+	font-family    : 'Playfair Display', Arial, Helvetica, sans-serif;
+	font-size      : 36px;
+	line-height    : 1.2;
+	text-transform : uppercase;
+	margin         : 0px;
+	padding-top    : 60px;
+}
+
+.br-season__line {
+	width        : 120px;
+	border       : 1px solid white;
+	margin-top   : 40px;
+	margin-bottom: 40px;
+	margin       : 40px auto;
+}
+
+.brand-link {
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+	padding-bottom : 80px;
+}
+
+.br-link {
+	margin-right: 30px;
+}
+
+.br-link:last-child {
+	margin-right: 0px;
+}
+
+.footer {
+	background    : url(/img/collections/footer.png) center center / cover no-repeat;
+	padding-bottom: 100px;
+}
+
+.f-title {
+	display       : flex;
+	font-family   : 'Playfair Display', Arial, Helvetica, sans-serif;
+	font-size     : 24px;
+	line-height   : 1.16;
+	text-transform: uppercase;
+	margin        : 0px;
+	padding-top   : 80px;
+	padding-bottom: 40px;
+}
+
+.magasine {
+	margin-right: 30px;
+}
+
+.magasine-text {
+	display    : flex;
+	width      : 350px;
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size  : 14px;
+	line-height: 1.5;
+	color      : white;
+}
+
+.categories-link {
+	font-family    : 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size      : 14px;
+	line-height    : 1.5;
+	color          : white;
+	text-decoration: none;
+	background     : #000;
+	padding        : 10px 20px;
+	margin         : 0px 20px 20px 0px;
+	display        : inline-block;
+}
+
+.email {
+	display    : flex;
+	padding-top: 37px;
+}
+
+.email-input {
+	width     : 210px;
+	height    : 42px;
+	background: rgba(255, 255, 255, 0.4);
+	border    : none;
+	color     : white;
+}
+
+.subscribe {
+	display       : flex;
+	text-transform: uppercase;
+	padding       : 0 20px;
+	background    : rgba(15, 15, 15, 1);
+	color         : white;
+	border        : none;
+	align-items   : center;
+	;
+}
+
+.vpz {
+	background: #0F0F0F;
+	display   : flex;
+}
+
+.vpz-title {
+	font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+	font-size  : 12px;
+	line-height: 1.33;
+	padding    : 17px 0px;
+}
+
+.GudyAlan {
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1680px) {
+	.product-bg {
+		padding: 30px 5px;
+	}
+
+	.product.center {
+		margin-left : 20px;
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 1340px) {
+
+	.container-one,
+	.container-two {
+		display: block;
+	}
+
+	.co-season,
+	.co-newcollection,
+	.ct-collection {
+		width: 100%;
+	}
+
+	.ct-bg {
+		display: none;
+	}
+
+	.np-season__title {
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 1140px) {
+	.container {
+		width        : 94%;
+		padding-left : 3%;
+		padding-right: 3%;
+	}
+
+	.np-product,
+	.np-product:nth-child(4n) {
+		margin-left : 12px;
+		margin-right: 12px;
+	}
+
+	.brand-link {
+		flex-wrap: wrap;
+	}
+
+	.br-link,
+	.br-link:last-child {
+		margin-left : 15px;
+		margin-right: 15px;
+	}
+}
+
+
+
+@media (max-width: 1059px) {
+	.magasine-text {
+		width: 250px;
+	}
+
+	.f-title {
+		justify-content: center;
+	}
+
+	.categories-list {
+		justify-content: space-between;
+		display        : grid;
+	}
+
+	.subscribe {
+		padding: 0px 7px;
+	}
+
+	.email-input {
+		width : 142px;
+		height: 24px;
+	}
+
+	.h-two {
+		font-size: 28px;
+	}
+}
+
+
+
+@media (max-width: 909px) {
+	.menu-nav__link {
+		padding: 0px 10px;
+	}
+
+	.menu-bascet {
+		margin-right: 15px;
+	}
+
+	.menu-nav {
+		margin-right: 10px;
+	}
+}
+
+
+
+@media (max-width: 794px) {
+	.h-two {
+		font-size: 22px;
+	}
+
+	.desk-logotext {
+		scale: 80%;
+	}
+
+	.f-title {
+		font-size: 18px;
+	}
+
+	.catalog__link {
+		font-size: 14px;
+		padding  : 6px 18px;
+
+	}
+
+	.collection__link {
+		font-size: 14px;
+		padding  : 6px 18px;
+	}
+
+	.name-product {
+		font-size: 16px;
+	}
+
+	.product-price {
+		font-size: 14px;
+	}
+
+	.br-link {
+		scale: 80%;
+	}
+
+	.co-season__list {
+		display        : flex;
+		justify-content: center;
+		flex-wrap      : wrap;
+	}
+
+	.product {
+		padding-top: 15px;
+	}
+}
+
+
+
+@media (max-width: 679px) {
+
+	.magasine-text {
+		width: 180px;
+	}
+
+	.subscribe {
+		padding: 0px 0px;
+		scale  : 85%;
+	}
+
+	.email-input {
+		width : 118px;
+		height: 20px;
+	}
+
+	.desk-logotext {
+		scale: 70%;
+		width: auto;
+	}
+}
+
+
+
+@media (max-width: 569px) {
+	.h-two {
+		font-size: 20px;
+	}
+
+	.f-title {
+		font-size: 16px;
+	}
+
+	.co-season {
+		padding: 35px 0;
+	}
+
+	.co-season__line {
+
+		margin: 15px auto;
+	}
+
+	.product-bg {
+		margin-bottom: 5px;
+	}
+
+	.name-product {
+		margin-bottom: 2px;
+	}
+
+	.ct-collection {
+		padding: 40px 0;
+	}
+
+	.ct-collection__line {
+		margin: 15px auto;
+	}
+
+	.np-season__line {
+		margin: 15px auto 20px auto;
+	}
+
+	.new-products {
+		padding-bottom: 10px;
+	}
+
+	.np-product {
+		margin-bottom: 20px;
+	}
+
+	.brand-title {
+		padding-top: 30px;
+	}
+
+	.br-season__line {
+		margin: 15px auto;
+	}
+
+	.brand-link {
+		padding-bottom: 25px;
+	}
+
+	.f-title {
+		padding-top   : 20px;
+		padding-bottom: 5px;
+	}
+
+	.footer {
+		padding-bottom: 30px;
+	}
+
+	.magasine-text {
+		width     : 100%;
+		text-align: center;
+	}
+
+	.magasine-text {
+		width: 100%;
+	}
+
+	.magasine-text {
+		width: 100%;
+	}
+
+	.flex {
+		display: block;
+	}
+
+	.categories-list {
+		display   : block;
+		text-align: center;
+	}
+
+	.vpz {
+		text-align: center;
+	}
+
+	.vpz-title {
+		padding: 5px 0px;
+	}
+
+	.email {
+		display        : flex;
+		padding-top    : 15px;
+		justify-content: center;
+	}
+
+	.categories-link {
+		padding: 5px 10px;
+		margin : 0px 15px 10px 0px;
+	}
+
+	.ct-collection__text {
+		margin-bottom: 20px;
+		width        : 100%;
+		box-sizing   : border-box;
+		padding      : 0 15px;
+
+	}
+
+	.np-season__title {
+		padding-top: 10px;
+	}
+
+	.menu {
+		padding-bottom: 10px;
+	}
+
+	.menu-logo {
+		justify-content: center;
+	}
+
+	.magasine {
+		margin-right: 0px;
+	}
+
+	.tel-reg__left-01 {
+		display        : flex;
+		justify-content: center;
+	}
+
+	.tel-reg__link-r {
+		justify-content: center;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.menu-right {
+		display: block;
+	}
+
+	.menu {
+		padding-bottom: 35px;
+	}
+}
